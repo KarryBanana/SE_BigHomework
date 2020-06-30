@@ -1,0 +1,33 @@
+<h1>流行电影</h1>
+{%for movie in movies%}
+<body>
+{{ movie.title }}
+{{ movie.rating }}
+<br >
+</body>
+{% endfor %}
+
+<h1>流行书籍</h1>
+{%for book in books%}
+<body>
+{{ book.title }}
+{{ book.rate }}
+<br >
+</body>
+{% endfor %}
+<h1>热门评论</h1>
+{%for topic in topicAll%}
+<body>
+{{ topic.name }}
+{{ topic.description }}
+<br >
+</body>
+{% endfor %}
+<h1>热门话题</h1>
+{%for group in groupAll%}
+<body>
+{{ group.name }}
+{{ group.description }}
+<br >
+</body>
+{% endfor %}
